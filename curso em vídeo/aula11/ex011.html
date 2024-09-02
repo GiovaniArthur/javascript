@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Identidade</title>
+</head>
+<body>
+    <h1>Check in internacional</h1>
+    Digite aqui seu país: <input type="text" name ="txtp" id="txtp"> 
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+        </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtp')
+            var res = window.document.querySelector('div#res')
+            var país = String(txtv.value)
+            res.innerHTML = `<p>Você acabou de desembarcar de um voo do: <strong>${país}</strong></p>`
+            if (país == "Brasil") {
+                res.innerHTML += '<p>Você é <strong>Brasileiro</strong>!</p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>Estrangeiro</strong></p>'
+            }
+            res.innerHTML += '<p>Seja bem vindo!</p>'
+        }
+    </script>
+</html>

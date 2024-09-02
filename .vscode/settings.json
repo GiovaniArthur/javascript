@@ -1,0 +1,8 @@
+{
+    "editor.tabSize": 4,
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.wrappingIndent": "none",
+    "editor.foldingStrategy": "indentation",
+    "miramac.node.showStdout": false,
+    "liveServer.settings.multiRootWorkspaceName": "JavaScript curso"
+}
